@@ -1,0 +1,39 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 40px;
+  height: 50px;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px 1px grey;
+  transition: all 0.3s;
+  &:hover {
+    box-shadow: 1px 1px 3px 1pxx violet;
+    border-color: rgb(158, 18, 158);
+  }
+  &:active {
+    box-shadow: 1px 1px 3px 1px lightcoral;
+  }
+
+  &_selected {
+    border-color: violet;
+    box-shadow: 1px 1px 3px 1px rgb(158, 18, 158);
+    .card__title {
+      opacity: 1;
+    }
+  }
+
+  &_matched {
+    box-shadow: 1px 1px 3px 1px green;
+    .card__title {
+      opacity: 1;
+    }
+  }
+
+  &__title {
+    opacity: 0;
+    transition: inherit;
+  }
+}

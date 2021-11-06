@@ -1,0 +1,1 @@
+export { MahjongPage } from './MahjongPage';
